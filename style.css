@@ -1,0 +1,305 @@
+body
+{
+    display: flex;
+}
+
+p, h1, h3, h4
+{
+    color: #424242;
+}
+
+p, h1, h2, h3, h4
+
+{
+    font-family: inherit, sans-serif;
+}
+
+
+
+/*bandeau */
+#bandeau
+{
+width: 25%;
+height: 1100px;
+background-color: #FFD600; 
+    
+}
+
+#photo
+{
+    height : 12,5%;
+    margin-top: 10px;
+    
+}
+
+.photo_cv 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+#contact
+{
+    height : 25%
+        
+}
+
+#a_propos
+{
+    height : 30%
+        
+}
+#loisirs
+{
+    height : 12%
+        
+}
+#bandeau p
+{
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2
+{
+  text-transform: uppercase;
+  text-align: center;
+  color:#FFD600;
+
+}
+
+.contact
+{
+    background-color: #424242;
+}
+
+.photo_cv
+{
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.a_propos
+
+{
+    background-color: #424242;
+}
+
+/*bandeau */
+/*partie loisirs*/
+
+.loisirs
+{
+    background-color: #424242;
+}
+
+.icon_loisirs
+{
+    font-size: 40px;
+    color: #424242;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon_loisirs i
+{
+ 
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  border:2px solid #424242;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+
+
+/*general*/
+
+#general
+{
+ width: 75%;
+height: 1000px;
+background-color:white; 
+margin-left: 50px;
+margin-top: 60px;
+       
+}
+
+.icon_general
+{
+    color: #FFD600;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 20px;
+    
+}
+/*header*/
+h1
+{
+text-transform: uppercase;
+font-size: 50px;
+}
+
+.titre_header
+{
+    text-decoration: underline #FFD600;
+}
+
+
+
+h3
+{
+text-transform: uppercase;
+
+}
+
+/*section général*/
+/*partie formation*/
+
+h4
+{
+text-transform: uppercase;
+
+}
+
+#formation
+{
+    height: 350px;
+    width: 950px;  
+}
+
+#titre_formation
+{
+    height: 50px;
+    width: 950px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#FFD600;
+    display: flex;
+    
+    
+}
+
+#contenu_formation
+{
+    width: 950px;
+    height: 300px;
+    margin-top: 30px;   
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+}
+
+#description_annee
+{
+    width: 120px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.open
+{
+  
+  margin-top: 15px;
+  margin-bottom: 100px;
+  list-style: none;
+}
+
+.open::before {
+	content: "◉";
+	color:#FFD600;
+    padding-right: 10px;
+    display: inline-block; 
+    font-size: 1em;
+     
+   
+}
+
+.sciences
+{
+  list-style: none;  
+}
+
+.sciences::before {
+	content: "●";
+	color:#FFD600;
+    padding-right: 10px;
+    display: inline-block; 
+    font-size: 1em;
+}
+#description_formation
+{
+    width: 700px;
+    height: 300px;
+    
+}
+
+/*section général*/
+/*partie expérience professionnelle*/
+
+#experience_pro
+{
+    height: 350px;
+    width: 950px;  
+}
+
+#titre_experience_pro
+{
+    height: 50px;
+    width: 950px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#FFD600;
+    display: flex;
+    
+}
+#contenu_experience_pro
+{
+    width: 950px;
+    height: 300px;
+    margin-top: 30px;   
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+/*footer*/
+
+footer
+{
+    height: 300px;
+    width: 950px;  
+}
+
+#titre_recommandation
+{
+    height: 50px;
+    width: 950px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#FFD600;
+    display: flex;
+    
+}
+
+#contenu_recom
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3
+{
+    margin-bottom: 30px;
+}
