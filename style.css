@@ -1,6 +1,8 @@
 body
 {
     display: flex;
+    height: 1300px;
+    width: 1335px;
 }
 
 p, h1, h3, h4
@@ -9,7 +11,6 @@ p, h1, h3, h4
 }
 
 p, h1, h2, h3, h4
-
 {
     font-family: inherit, sans-serif;
 }
@@ -19,17 +20,15 @@ p, h1, h2, h3, h4
 /*bandeau */
 #bandeau
 {
-width: 25%;
-height: 1100px;
-background-color: #FFD600; 
-    
+width: 294px;
+height: 1300px;
+background-color: #FFD600;    
 }
 
 #photo
 {
-    height : 12,5%;
-    margin-top: 10px;
-    
+    height : 286px;
+    margin-top: 40px;   
 }
 
 .photo_cv 
@@ -38,22 +37,22 @@ background-color: #FFD600;
     margin-left: auto;
     margin-right: auto;  
 }
+
 #contact
 {
-    height : 25%
-        
+    height : 364px;       
 }
 
 #a_propos
 {
-    height : 30%
-        
+    height : 364px;       
 }
+
 #loisirs
 {
-    height : 12%
-        
+    height : 156px;      
 }
+
 #bandeau p
 {
     text-align: justify;
@@ -66,7 +65,6 @@ h2
   text-transform: uppercase;
   text-align: center;
   color:#FFD600;
-
 }
 
 .contact
@@ -82,10 +80,10 @@ h2
 }
 
 .a_propos
-
 {
     background-color: #424242;
 }
+
 
 /*bandeau */
 /*partie loisirs*/
@@ -122,12 +120,12 @@ h2
 
 #general
 {
- width: 75%;
-height: 1000px;
+ width: 1041px;
+height: 1300px;
 background-color:white; 
 margin-left: 50px;
-margin-top: 60px;
-       
+margin-top: 50px;
+margin-right: 15px;    
 }
 
 .icon_general
@@ -135,10 +133,17 @@ margin-top: 60px;
     color: #FFD600;
     font-size: 25px;
     margin-top: 15px;
-    margin-right: 20px;
-    
+    margin-right: 20px;   
 }
+
+
 /*header*/
+
+header
+{
+    height: 221px;   
+}
+
 h1
 {
 text-transform: uppercase;
@@ -150,13 +155,12 @@ font-size: 50px;
     text-decoration: underline #FFD600;
 }
 
-
-
 h3
 {
 text-transform: uppercase;
-
 }
+
+
 
 /*section général*/
 /*partie formation*/
@@ -164,14 +168,20 @@ text-transform: uppercase;
 h4
 {
 text-transform: uppercase;
-
 }
 
 #formation
 {
-    height: 350px;
+    height: 380px;
     width: 950px;  
 }
+
+#formation p
+
+{
+  text-align: justify;  
+}
+
 
 #titre_formation
 {
@@ -180,9 +190,7 @@ text-transform: uppercase;
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-bottom-color:#FFD600;
-    display: flex;
-    
-    
+    display: flex;    
 }
 
 #contenu_formation
@@ -195,22 +203,21 @@ text-transform: uppercase;
     
 }
 
-}
 
 #description_annee
 {
-    width: 120px;
-    height: 300px;
+    width: 180px;
+    height: 280px;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 5px;
 }
 
 .open
 {
   
   margin-top: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   list-style: none;
 }
 
@@ -219,9 +226,7 @@ text-transform: uppercase;
 	color:#FFD600;
     padding-right: 10px;
     display: inline-block; 
-    font-size: 1em;
-     
-   
+    font-size: 1em;  
 }
 
 .sciences
@@ -229,18 +234,19 @@ text-transform: uppercase;
   list-style: none;  
 }
 
-.sciences::before {
+.sciences::before 
+{
 	content: "●";
 	color:#FFD600;
     padding-right: 10px;
     display: inline-block; 
     font-size: 1em;
 }
+
 #description_formation
 {
     width: 700px;
-    height: 300px;
-    
+    height: 280px;   
 }
 
 /*section général*/
@@ -248,7 +254,7 @@ text-transform: uppercase;
 
 #experience_pro
 {
-    height: 350px;
+    height: 340px;
     width: 950px;  
 }
 
@@ -259,17 +265,47 @@ text-transform: uppercase;
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-bottom-color:#FFD600;
-    display: flex;
-    
+    display: flex;    
 }
+
 #contenu_experience_pro
 {
     width: 950px;
-    height: 300px;
+    height: 280px;
     margin-top: 30px;   
     display: flex;
     justify-content: space-between;
-    
+}
+
+.thema
+{
+  
+  margin-top: 15px;
+  margin-bottom: 85px;
+  list-style: none;
+}
+
+.thema::before 
+{
+	content: "◉";
+	color:#FFD600;
+    padding-right: 10px;
+    display: inline-block; 
+    font-size: 1em;  
+}
+
+.aepe
+{
+  list-style: none;  
+}
+
+.aepe::before 
+{
+	content: "●";
+	color:#FFD600;
+    padding-right: 10px;
+    display: inline-block; 
+    font-size: 1em;
 }
 
 
@@ -278,7 +314,7 @@ text-transform: uppercase;
 
 footer
 {
-    height: 300px;
+    height: 260px;
     width: 950px;  
 }
 
@@ -289,17 +325,110 @@ footer
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-bottom-color:#FFD600;
-    display: flex;
-    
+    display: flex;   
 }
 
 #contenu_recom
 {
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 footer h3
 {
     margin-bottom: 30px;
+}
+
+
+
+/*petite résolution*/
+
+@media screen and (max-width: 1200px)
+{
+
+body
+    {
+        width: auto;  
+    }
+    
+#general
+    {
+        width: auto;
+    }
+    
+#bandeau
+    {
+        width: auto;
+    }
+
+h1
+{
+font-size: 40px;
+}
+
+#photo
+{
+    height : 18%;
+}
+    
+header
+{
+    height:15%;   
+}
+    
+#general
+{
+margin-top: 30px;
+}
+    
+#contenu_recom
+{
+    display: flex;
+    justify-content: flex-start;
+} 
+
+#recom1
+{
+        margin-right: 50px;
+}
+    
+#contenu_formation
+{
+  
+    display: flex;
+    justify-content: flex-start;   
+}
+    
+#contenu_experience_pro
+{
+     display: flex;
+    justify-content: flex-start;   
+}
+
+}
+
+
+
+/* très petite résolution*/
+
+@media screen and (max-width: 768px)
+{
+    
+h1
+{
+font-size: 30px;
+}
+    
+#photo
+{
+    height : 16%;
+} 
+    
+header
+{
+    height:13%;   
+}  
+    
+
 }
