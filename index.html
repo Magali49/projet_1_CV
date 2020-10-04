@@ -1,12 +1,13 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <title>Mon CV</title>
         <script src="https://kit.fontawesome.com/8d2e53b4cb.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     
     <body>
@@ -14,24 +15,24 @@
         <section id="bandeau">
             
             <div id="photo">
-                <img class="photo_cv" src="photo_cv.JPG">
+                <img class="photo_cv" src="photo_cv.JPG" alt="photo">
             </div>
             
             <div id="contact">
                 <div class="contact">     
-                    <h2>contact</h2>
+                    <span>contact</span>
                 </div>
                
                 <p> Adresse <br> Angers, France</p>
                 <p> Téléphone <br> 0629000000</p>
-                <P> Email <br> magali.mthomas@hotmail.fr</P>
-                <p> Site Web <br> www.name.com</p>
-                <p> Skype <br> @nom_dutilisateur</p>
+                <P> Email <br><a href="mailto:magali.mthomas@hotmail.fr">magali.mthomas@hotmail.fr</a> </P>
+                <p> Site Web <br> <a href="">www.name.com</a></p>
+                <p> Skype <br><a href="">@nom_dutilisateur</a></p>
             </div>
             
              <div id="a_propos">
                  <div class="a_propos">
-                 <h2>à propos de moi</h2>
+                 <span>à propos de moi</span>
                  </div>
                 
                 <p>Je m'appelle Magali. Je suis ingénieure écologue depuis 10 ans. Mon travail consiste à réaliser des inventaires de la faune et des dossiers réglementaires. Losque je ne cours pas après les insectes ou les oiseaux, j'apprends le développement web depuis quelques mois.</p> 
@@ -39,7 +40,7 @@
             
             <div id="loisirs">
                 <div class="loisirs">
-                <h2>Loisirs </h2>
+                <span>Loisirs </span>
                 </div>
                 
                 <span class="icon_loisirs">
@@ -57,7 +58,7 @@
             
             <header>
                 <h1> <span style="color:#FFD600 ">Magali</span> Thomas</h1>
-                <p> <b><span class="titre_header">Dévelo</span>ppeuse Web Freelance </b> </p>
+                <h2>Développeuse Web Freelance</h2> 
             </header>
             
             
@@ -69,12 +70,13 @@
                 
                 <div id="contenu_formation">
                     
-                    <div id=description_annee>
-                        <li class="open"> 2020 août-novembre</li>
-                        <li class="sciences"> 2001-2007</li>
-                    </div>
+                    <div id="formation1">
                     
-                    <div id=description_formation>
+                       <menu id="description_annee">
+                        <li class="open"> 2020 août-novembre</li>
+                       </menu>
+                        
+                      <div id="description_formation">
                         <h4>Openclassroom</h4>
                         <p><B>Dévellopeur web junior - Intégration Web avec HTML5 & CSS3</B><br>
                         Définir la structure d'une page web à partir d'une maquette ; 
@@ -83,18 +85,31 @@
                         Intégrer du contenu conformément à une maquette ;
                         Préparer des éléments graphiques et textuels à intégrer à une page web ;
                         Utiliser un système de gestion de versions pour le suivi du projet et son hébergement.
-                        </p>
+                        </p>                                                                 
+                      </div>                     
+                    
+                    </div>
+                    
+                    
+                   <div id="formation2">
+                    
+                     <menu id="description_annee01">
+                        <li class="sciences"> 2001-2007</li>
+                    </menu> 
                         
+                        <div id="description_formation1">
                         <h4>UFR sciences Angers</h4>
                         <p>Master 1 Géographie <br> Master 1 Environnement<br>
-                         
-                        </p>
-                                          
-                    </div>    
+                        </p>                   
+                        </div>     
+                    
+                    </div>
+                  
                 
                 </div>
                
             </div>
+            
             
              <div id="experience_pro">
                  <div id="titre_experience_pro">
@@ -103,25 +118,39 @@
                  </div>
                 
                  <div id="contenu_experience_pro">
-                  <div id=description_annee>
-                        <li class="thema"> Depuis mai 2020</li>
-                        <li class="aepe"> 2011-2020</li>
-                    </div>
-                    
-                    <div id=description_formation>
+                     
+                     <div id="experience1">
+                     
+                          <menu id="description_annee1">
+                            <li class="thema"> Depuis mai 2020</li>
+                        </menu>
+                           
+                         <div id="description_experience1">
                         <h4>THEMA Environnement, Ancenis (44)</h4>
                         <p>Ingénieure écologue, spécialiste faune <br>
                             Inventaire faunistique, rédaction de dossiers réglementaires
-                        </p>
-                        
+                        </p>           
+                        </div>  
+                     
+                     </div>
+                     
+                     
+                     <div id="experience2">
+                        <menu id="description_annee2">
+                        <li class="aepe"> 2011-2020</li>
+                       </menu>
+                    
+                    <div id="description_experience2">
                         <h4>AEPE-Gingko, Saint-Mathurin-sur-Loire (49)</h4> 
                         <p> Ingénieure écologue, spécialiste faune <br>
                             Responsable du pôle Faune-Flore, inventaire faunistique, rédaction de dossiers réglementaires
-                        </p>
-                                          
+                        </p>                                         
                     </div>  
                      
+                     </div>                    
+                                          
                 </div>
+                 
             </div>
             
             
