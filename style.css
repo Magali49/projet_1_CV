@@ -1,62 +1,52 @@
-body
-{
+body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
 }
 
-p, h1, h2, h3, h4
-{
+p, h1, h2, h3, h4{
     color: #424242;
 }
 
 /*bandeau */
-#bandeau
-{
-width: 22%;
-background-color: #FFD600;    
+.bandeau {
+    width: 22%;
+    background-color: #FFD600;    
 }
 
-#photo
-{
+.photo {
     margin-top: 40px;   
 }
 
-.photo_cv 
-{
+.photo_cv {
     display: block;
     margin-left: auto;
     margin-right: auto;  
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
 }
 
-a 
-{
+a {
   outline: none;
   text-decoration: none;
   color: #424242;
 }
 
-
-a:hover 
-{
-font-weight: bold;
+a:hover {
+    font-weight: bold;
 }
 
-
-#a_propos
-{
-  margin-bottom: 110px;        
+.a_propos {
+  margin-bottom: 150px;        
 }
 
-#bandeau p
-{
+.bandeau p {
     text-align: justify;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-
-.contact, .loisirs, .a_propos
-{
+.titre_bandeau {
     background-color: #424242;
     text-transform: uppercase;
     text-align: center;
@@ -67,26 +57,24 @@ font-weight: bold;
     font-size: 20px;
 }
 
-.photo_cv
-{
-    width: 90%;
-    height: auto;
-    border-radius: 50%;
+.linkedin{
+    display: flex;    
 }
 
+.linkedin p{
+    margin-top: 3px;
+    padding-right: 10px;
+}
 
-
+.logo_in {
+    width: 25px;
+    height: 25px;
+}
 
 /*bandeau */
 /*partie loisirs*/
 
-.loisirs
-{
-    background-color: #424242;
-}
-
-.icon_loisirs
-{
+.icon_loisirs {
     font-size: 40px;
     color: #424242;
     display: flex;
@@ -94,9 +82,7 @@ font-weight: bold;
     margin-top: 30px;
 }
 
-.icon_loisirs i
-{
- 
+.icon_loisirs i {
   border-radius:50%;
   width:60px;
   height:60px;
@@ -107,39 +93,37 @@ font-weight: bold;
   padding-top: 10px;
 }
 
-
-
 /*general*/
 
-#general
-{
- width: 78%;
-background-color:white; 
-margin-left: 50px;
-margin-top: 50px;
-margin-right: 15px;    
+.general {
+    width: 78%;
+    background-color:white; 
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 15px;    
 }
 
-.icon_general
-{
+.icon_general {
     color: #FFD600;
     font-size: 25px;
     margin-top: 15px;
     margin-right: 20px;   
 }
 
-
+/*section général*/
 /*header*/
 
-h1
-{
-text-transform: uppercase;
-font-size: 50px;
-margin-bottom: 2px;
+header {
+    margin-bottom: 100px;
 }
 
-h2
-{
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 2px;
+}
+
+h2 {
     margin-top: 1px;
     font-size: 20px;
     font-weight: bold;
@@ -147,8 +131,7 @@ h2
     padding-bottom: 2px;
 }
 
-h2::before
-{
+h2::before {
     background-color: #FFD600;
     width: 50px;
     height: 2px;
@@ -158,84 +141,69 @@ h2::before
     left: 0px;
 }
 
-
-
 /*section général*/
 /*partie formation*/
+/*partie expérience professionnelle*/
 
-h3, h4
-{
-text-transform: uppercase;
+h3, h4 {
+    text-transform: uppercase;
 }
 
-#formation
-{
- margin-bottom: 20px;    
+.partie_general {
+    margin-bottom: 20px;    
 }
 
-#formation1
-{
- display: flex;
- justify-content: space-between;
+.sous_partie_general {
+    display: flex;
+    justify-content: space-between;
 }
 
-#formation2
-{
- display: flex;
- justify-content: space-between;
+.partie_general p {
+    text-align: justify;  
 }
 
-#formation p
-
-{
-  text-align: justify;  
-}
-
-
-#titre_formation
-{
+.titre_section_general {
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-bottom-color:#FFD600;
     display: flex;    
 }
 
-#contenu_formation
-{
+.contenu_partie_general {
     margin-top: 30px;   
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
+.description_sous_partie {
+    width: 700px;
+    margin-right: 50px;
+}
 
-#description_annee
-{
+.menu_annee1 {
     width: 200px;
     margin-right: 50px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     margin-top: 4px;
 }
 
-#description_annee01
-{
+.menu_annee2 {
     width: 200px;
     margin-right: 50px;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column;*/
     margin-top: 22px;
 }
 
-.open
-{
-  margin-top: 15px;
-  margin-bottom: 140px;
-  list-style: none;
+.puce1 {
+    margin-top: 15px;
+    margin-bottom: 140px;
+    list-style: none;
 }
 
-.open::before {
+.puce1::before {
 	content: "◉";
 	color:#FFD600;
     padding-right: 10px;
@@ -243,153 +211,29 @@ text-transform: uppercase;
     font-size: 1em;  
 }
 
-.sciences
+.puce2
 {
-  list-style: none;  
+    list-style: none;  
 }
 
-.sciences::before 
-{
+.puce2::before {
 	content: "●";
 	color:#FFD600;
     padding-right: 10px;
     display: inline-block; 
     font-size: 1em;
-}
-
-#description_formation
-{
-    width: 700px;
-    margin-right: 50px;
-}
-
-#description_formation1
-{
-    width: 700px;
-    margin-right: 50px;
 }
 
 /*section général*/
-/*partie expérience professionnelle*/
-
-#experience_pro
-{
- margin-bottom: 20px;    
-}
-
-#experience1
-{
- display: flex;
- justify-content: space-between;    
-}
-
-#experience2
-{
- display: flex;
- justify-content: space-between;    
-}
-
-#titre_experience_pro
-{
-    border-bottom-width:1px;
-    border-bottom-style:solid;
-    border-bottom-color:#FFD600;
-    display: flex;    
-}
-
-#contenu_experience_pro
-{
-    margin-top: 30px;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.thema
-{
-  
-  margin-top: 15px;
-  margin-bottom: 85px;
-  list-style: none;
-}
-
-.thema::before 
-{
-	content: "◉";
-	color:#FFD600;
-    padding-right: 10px;
-    display: inline-block; 
-    font-size: 1em;  
-}
-
-.aepe
-{
-  list-style: none;  
-}
-
-.aepe::before 
-{
-	content: "●";
-	color:#FFD600;
-    padding-right: 10px;
-    display: inline-block; 
-    font-size: 1em;
-}
-
-#description_annee1
-{
-    width: 200px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-}
-
-#description_annee2
-{
-    width: 200px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 22px;
-}
-
-#description_experience1
-{
-    width: 700px;
-    margin-right: 50px;
-}
-
-#description_experience2
-{
-    width: 700px;
-    margin-right: 50px;
-}
-
 /*footer*/
 
-footer
-{
- margin-bottom: 20px;
-}
-
-#titre_recommandation
-{
-    border-bottom-width:1px;
-    border-bottom-style:solid;
-    border-bottom-color:#FFD600;
-    display: flex;   
-}
-
-#contenu_recom
-{
+.contenu_recom {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
 
-footer h3
-{
+footer h3{
     margin-bottom: 30px;
 }
 
@@ -400,100 +244,42 @@ footer h3
 @media screen and (max-width: 1200px)
 {
 
-body
-    {
-        width: auto;  
+body, .general, .bandeau {
+    width: auto;  
     }
-    
-#general
-    {
-        width: auto;
-    }
-    
-#bandeau
-    {
-        width: auto;
-    }
-
-h1
-{
-font-size: 40px;
+h1 {
+    font-size: 40px;
 }
-
-    
-#general
-{
-margin-top: 30px;
+  
+.general {
+    margin-top: 30px;
 }
        
-#formation1
-{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+.sous_partie_general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-#formation2
-{
- display: flex;
- flex-direction: column;    
- justify-content: space-between;
-}
-    
- #experience1
-{
- display: flex;
- flex-direction: column;    
- justify-content: space-between;    
-}
-
-#experience2
-{
- display: flex;
- flex-direction: column;    
- justify-content: space-between;    
-}
-    
-.thema
-{
   
-  margin-bottom: 1px;
+.puce1 {
+    margin-bottom: 1px;
 } 
-    
-.open
-{
-  margin-bottom: 1px;
-}     
-    
-#contenu_recom
-{
+       
+.contenu_recom {
     display: flex;
     justify-content: flex-start;
 } 
 
-#recom1
-{
+.recom1 {
     margin-right: 50px;
 }
-
+    
 }
-
-
 
 /* très petite résolution*/
 
 @media screen and (max-width: 768px)
-{
-    
-h1
-{
-font-size: 30px;
-}
-    
-p
-    {
-        font-size: 14px;
-    }
-    
-
+{  
+h1{font-size: 30px;}    
+p{font-size: 14px;}   
 }
