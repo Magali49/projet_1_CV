@@ -1,6 +1,7 @@
 body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
+    margin:0px;
 }
 
 p, h1, h2, h4{
@@ -81,6 +82,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .icon_loisirs i {
@@ -90,7 +92,7 @@ a:hover {
   border:2px solid #424242;
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 10px;    
   padding:10px;
   align-items: center
 }
@@ -183,23 +185,24 @@ h3 {
 }
 
 .description_sous_partie {
-    width: 77%;
+    width: 72%;
     margin-right: 50px;
 }
 
 .menu_annee1 {
-    width: 23%;
+    width: 28%;
     margin-right: 50px;
     margin-top: 4px;
 }
 
 .menu_annee2 {
-    width: 23%;
+    width: 28%;
     margin-right: 50px;
     margin-top: 22px;
 }
 
 .puce1 {
+    /*width: 100%;*/
     margin-top: 15px;
     margin-bottom: 140px;
     list-style: none;
@@ -239,64 +242,129 @@ footer h3{
     margin-bottom: 30px;
 }
 
-/*petite résolution*/
+/*Responsive
+ Petite résolution
+ 1300px*/
 
+@media screen and (max-width: 1300px)
+{ 
+.bandeau {width: 30%;}
+.general {width: 70%;}
+.photo_cv{width: 80%;}
+.description_sous_partie {width: 69%;}
+.menu_annee1,.menu_annee2 {width: 31%;}
+}
+
+/*1200px*/
 @media screen and (max-width: 1200px)
 {
-    
-body, .bandeau, .bandeau {
-    width: auto;  
-    }
-  
-h1 {
-    font-size: 40px;
-}
-  
-.general {
-    margin-top: 30px;
-}
+h1 {font-size: 40px;}
+.general {margin-top: 30px;}
        
-.sous_partie_general, .contenu_recom {
+.sous_partie_general {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-  
-.puce1 {
-    margin-bottom: 1px;
-}        
 
-.recom1 {
-    margin-right: 50px;
-}
+.menu_annee1,.menu_annee2,.description_sous_partie {
+    width: 80%;  
+}    
     
-.icon_loisirs, .icon_loisirs i {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;  
+.puce1 {margin-bottom: 1px;}        
+.recom1 {margin-right: 50px;}
+    
+.icon_loisirs {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-        
+
+.icon_loisirs i {
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  margin-top: 10px;    
+  padding:8px;
+}    
 }
+
+/*1000px*/
+@media screen and (max-width: 1000px)
+{
+    
+.bandeau {width: 37%;}
+.general {width: 63%;}
+
+.icon_loisirs {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon_loisirs i {
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  margin-top: 10px;    
+  padding:8px;
+} 
+}
+
+/*800*/
+@media screen and (max-width: 800px){
+
+.bandeau {width: 40%;}
+.general {width: 60%;}
+    
+.general {
+    margin-left: 35px;
+    margin-right: 5px;    
+}   
+
+p{font-size: 13px;}    
+h3{font-size: 15px;}
+h4{font-size: 14px;}
+h5{font-size: 13px;}    
+ 
+
+.description_sous_partie {
+    width: 95%;
+    margin-right: 20px;
+    }
+}
+
 
 /* très petite résolution*/
+/*700px*/
 
-@media screen and (max-width: 768px)
-{  
+@media screen and (max-width: 700px)
+{
+
 h1{font-size: 30px;}
 h2 {font-size: 16px;}
 h3{font-size: 14px;}
 h4{font-size: 12px;}
-h5{font-size: 13px;}
 p{font-size: 12px;}
+.recom1 {margin-right: 30px;}
+.general {margin-left: 20px;}
+.bandeau p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+.icon_loisirs {
+  font-size: 27px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-.photo_cv{width: 80%;}
-
-.icon_loisirs, .icon_loisirs i {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;  
+.icon_loisirs i {
+  border-radius:50%;
+  width:45px;
+  height:45px;
+  margin-top: 10px;    
+  padding:7px;
 }
     
 .icon_general {
@@ -304,5 +372,25 @@ p{font-size: 12px;}
     margin-top: 14px;
     margin-right: 14px;   
 }
+
+}
+
+ /*600px*/
+@media screen and (max-width: 600px)
+{
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+.bandeau {width: 100%;}
+
+.general {
+    width:100%;
+    margin-left: 0px;
+    }
     
+header, .partie_general{margin-left: 30px;}
+header, .a_propos {margin-bottom: 50px}
+.photo_cv{width: 50%;}    
 }
